@@ -10,7 +10,7 @@
   "authors": [ "Lomeli12" ],
   "screenshots": [],
   "dependencies": [
-         "mod_MinecraftForge",
-]
+         "mod_MinecraftForge"
+    ]  
 }
 ]
