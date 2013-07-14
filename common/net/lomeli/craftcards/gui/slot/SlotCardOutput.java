@@ -27,7 +27,7 @@ public class SlotCardOutput extends Slot
 	@Override
     public boolean isItemValid(ItemStack itemStack)
 	{
-		if(itemStack.getItem() instanceof ItemCraftCards)
+		if(itemStack.getItem() instanceof ItemCraftCards && itemStack.getItemDamage() == 1)
 			return true;
 		else
 			return false;

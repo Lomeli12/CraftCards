@@ -4,7 +4,7 @@ public class ModInts
 {
 	public static final int MAJOR = 1;
 	public static final int MINOR = 0;
-	public static final int BUILD = 0;
+	public static final int BUILD = 1;
 	
 	public static int stamperGuiID = 35;
 	

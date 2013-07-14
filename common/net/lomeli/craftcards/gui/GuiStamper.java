@@ -7,7 +7,7 @@ import net.lomeli.craftcards.inventory.ContainerStamper;
 import net.lomeli.craftcards.lib.ModStrings;
 
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.resources.ResourceLocation;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.InventoryPlayer;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

@@ -17,7 +17,7 @@ public class SlotCard extends Slot
 	@Override
     public boolean isItemValid(ItemStack itemStack)
 	{
-		if(itemStack.getItem() instanceof ItemCraftCards)
+		if(itemStack.getItem() instanceof ItemCraftCards && itemStack.getItemDamage() == 0)
 			return true;
 		else
 			return false;

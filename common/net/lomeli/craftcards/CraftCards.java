@@ -5,7 +5,10 @@ import net.lomeli.craftcards.core.CommonProxy;
 import net.lomeli.craftcards.core.Config;
 import net.lomeli.craftcards.core.handler.GuiHandler;
 import net.lomeli.craftcards.items.ModItems;
+import net.lomeli.craftcards.lib.ModInts;
 import net.lomeli.craftcards.lib.ModStrings;
+
+import net.lomeli.lomlib.util.UpdateHelper;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -17,7 +20,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.network.NetworkRegistry;
 
 @Mod(modid = ModStrings.MOD_ID, name = ModStrings.MOD_NAME, version = ModStrings.VERSION,
-	dependencies="required-after:LomLib@[1.0.3,)")
+	dependencies="required-after:LomLib@[1.0.4,)")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class CraftCards
 {
@@ -29,13 +32,24 @@ public class CraftCards
 
 	private GuiHandler gui = new GuiHandler();
 	
+	public static UpdateHelper updater = new UpdateHelper();
+	
 	@Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
 		Config.configureMod(event.getSuggestedConfigurationFile());
 		
+		try
+		{
+			updater.check(ModStrings.MOD_NAME, ModStrings.XMLURL, 
+				ModInts.MAJOR, ModInts.MINOR, ModInts.BUILD);
+		} catch (Exception e)
+		{}
+		
 		ModItems.registerItems();
 		ModBlocks.registerBlocks();
+		
+		proxy.registerTickHandler();
     }
 	
 	@Mod.EventHandler
