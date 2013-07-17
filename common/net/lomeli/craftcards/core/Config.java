@@ -17,6 +17,8 @@ public class Config
 		
 		ModInts.craftCardID = config.get("Items", "carftCard", 890).getInt(890);
 		ModInts.inkID = config.get("Items", "ink", 891).getInt(891);
+		ModInts.cardBagID = config.get("Items", "cardbag", 892).getInt(892);
+		ModInts.clothID = config.get("Items", "cloth", 893).getInt(893);
 		
 		ModInts.stamperID = config.get("Blocks", "stamper", 892).getInt(892);
 		

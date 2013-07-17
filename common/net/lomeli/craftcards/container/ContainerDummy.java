@@ -1,4 +1,4 @@
-package net.lomeli.craftcards.inventory;
+package net.lomeli.craftcards.container;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;

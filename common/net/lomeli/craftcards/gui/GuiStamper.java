@@ -3,7 +3,7 @@ package net.lomeli.craftcards.gui;
 import org.lwjgl.opengl.GL11;
 
 import net.lomeli.craftcards.tileentity.TileEntityStamper;
-import net.lomeli.craftcards.inventory.ContainerStamper;
+import net.lomeli.craftcards.container.ContainerStamper;
 import net.lomeli.craftcards.lib.ModStrings;
 
 import net.minecraft.client.gui.inventory.GuiContainer;

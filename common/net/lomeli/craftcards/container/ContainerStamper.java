@@ -1,4 +1,4 @@
-package net.lomeli.craftcards.inventory;
+package net.lomeli.craftcards.container;
 
 import net.lomeli.craftcards.gui.slot.SlotCard;
 import net.lomeli.craftcards.gui.slot.SlotCardOutput;

@@ -2,7 +2,7 @@
 {
   "modid": "craftcards",
   "name": "Craft Cards",
-  "version": "1.0.0",
+  "version": "1.1.0",
   
   "description": "A very simple mod that adds special cards that can have recipes encoded to them, then used to insta-craft the items.",  
   "credits": "Created by Lomeli12",

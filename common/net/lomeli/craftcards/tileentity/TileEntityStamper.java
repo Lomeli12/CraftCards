@@ -1,6 +1,6 @@
 package net.lomeli.craftcards.tileentity;
 
-import net.lomeli.craftcards.inventory.ContainerDummy;
+import net.lomeli.craftcards.container.ContainerDummy;
 import net.lomeli.craftcards.items.ModItems;
 import net.lomeli.craftcards.items.ItemCraftCards;
 
