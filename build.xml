@@ -55,7 +55,10 @@
         <mkdir dir="..\..\releases\${dir.modname}\${release.minecraft.version}\${release.mod.version}" />
 		<jar destfile="..\..\releases\${dir.modname}\${release.minecraft.version}\${release.mod.version}\${release.mod.name}-universal-${release.mod.version}-build-${build_number.build_number}.jar" >
 			<fileset dir="${dir.development}\forge\mcp\src\minecraft\" includes="mcmod.info" />
-			<fileset dir="${dir.development}\forge\mcp\reobf\minecraft" excludes="**/lomlib/**" />
+			<fileset dir="${dir.development}\forge\mcp\reobf\minecraft">
+                <exclude name="**/lomlib/**" />
+                <exclude name="**/minecraft/**" />
+            </fileset>
 			<fileset dir="${dir.development}\source\${dir.modname}\resources" excludes="**/xcf/**" />
 		</jar>
     </target>

@@ -6,22 +6,20 @@ import net.lomeli.craftcards.lib.ModInts;
 
 import net.minecraftforge.common.Configuration;
 
-public class Config
-{
+public class Config {
 
-	public static void configureMod(File configName)
-	{
-		Configuration config = new Configuration(configName);
-		
-		config.load();
-		
-		ModInts.craftCardID = config.get("Items", "carftCard", 890).getInt(890);
-		ModInts.inkID = config.get("Items", "ink", 891).getInt(891);
-		ModInts.cardBagID = config.get("Items", "cardbag", 892).getInt(892);
-		ModInts.clothID = config.get("Items", "cloth", 893).getInt(893);
-		
-		ModInts.stamperID = config.get("Blocks", "stamper", 892).getInt(892);
-		
-		config.save();
-	}
+    public static void configureMod(File configName) {
+        Configuration config = new Configuration(configName);
+
+        config.load();
+
+        ModInts.craftCardID = config.get("Items", "carftCard", 890).getInt(890);
+        ModInts.inkID = config.get("Items", "ink", 891).getInt(891);
+        ModInts.cardBagID = config.get("Items", "cardbag", 892).getInt(892);
+        ModInts.clothID = config.get("Items", "cloth", 893).getInt(893);
+
+        ModInts.stamperID = config.get("Blocks", "stamper", 892).getInt(892);
+
+        config.save();
+    }
 }
